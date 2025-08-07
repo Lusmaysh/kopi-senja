@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Coffee, Star, Menu, X } from 'lucide-react';
-import React, { useState, useEffect, useRef, ReactNode } from 'react';
+import { Coffee, Menu, X } from 'lucide-react';
+import React, { useState, useEffect, useRef, ReactNode, JSX } from 'react';
 
 // ===== Definisi Tipe Data (Interfaces) =====
 interface NavLink {
