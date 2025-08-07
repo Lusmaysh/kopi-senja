@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja - Nikmati Senja, Nikmati Kopi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animasi fade-in saat scroll */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-amber-50 font-sans text-gray-800">
+
+    <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-orange-900">Kopi Senja ☕️</a>
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#menu" class="text-gray-600 hover:text-orange-600 transition-colors">Menu</a>
+                <a href="#gallery" class="text-gray-600 hover:text-orange-600 transition-colors">Galeri</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-orange-600 transition-colors">Testimoni</a>
+            </div>
+            <a href="https://wa.me/6281234567890" target="_blank" class="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-all shadow-md font-semibold">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <section class="relative flex flex-col items-center justify-center min-h-screen px-4 text-center bg-gradient-to-br from-orange-100 via-amber-50 to-white pt-16">
+        <div class="relative z-10">
+            <div class="inline-block mb-6 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-2 rounded-full text-sm font-bold animate-pulse shadow-lg">
+                ✨ Buka Setiap Hari!
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                <span class="bg-gradient-to-r from-orange-600 via-amber-700 to-orange-800 bg-clip-text text-transparent block">Cari Kopi Terbaik?</span>
+                <span class="text-gray-900 block mt-2">di SENJA aja!</span>
+            </h1>
+            <p class="max-w-2xl mx-auto mb-8 text-lg sm:text-xl text-gray-600">
+                Temukan ketenangan di setiap cangkir. Kami menyajikan biji kopi pilihan dengan suasana <span class="font-bold text-orange-600">hangat dan nyaman</span> untuk menemani senja Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#menu" class="w-full sm:w-auto">
+                    <button class="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:scale-105 transition-all duration-300">
+                        Lihat Menu Kami
+                    </button>
+                </a>
+                <a href="#gallery" class="w-full sm:w-auto">
+                    <button class="w-full bg-white text-orange-600 border-2 border-orange-600 font-semibold py-3 px-8 rounded-xl hover:bg-orange-50 hover:scale-105 transition-all duration-300">
+                        Intip Suasana
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="py-20 px-4 bg-white fade-in-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Menu Andalan <span class="text-orange-600">Kopi Senja</span></h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Dibuat dengan cinta oleh barista berpengalaman kami, hanya untuk Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="border rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 ring-2 ring-orange-500 bg-amber-50">
+                    <div class="text-4xl mb-4">☕️</div>
+                    <h3 class="text-xl font-bold mb-2">Senja Latte</h3>
+                    <p class="text-gray-500 text-sm mb-4">Signature latte kami dengan sentuhan rasa karamel dan kayu manis.</p>
+                    <div class="text-2xl font-bold text-orange-600">Rp 28.000</div>
+                </div>
+                <div class="border rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-4xl mb-4">🥐</div>
+                    <h3 class="text-xl font-bold mb-2">Butter Croissant</h3>
+                    <p class="text-gray-500 text-sm mb-4">Pendamping kopi yang sempurna, renyah di luar dan lembut di dalam.</p>
+                    <div class="text-2xl font-bold text-orange-600">Rp 20.000</div>
+                </div>
+                <div class="border rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-4xl mb-4">🧊</div>
+                    <h3 class="text-xl font-bold mb-2">Americano on The Rock</h3>
+                    <p class="text-gray-500 text-sm mb-4">Espresso shot ganda dengan air dingin untuk kesegaran maksimal.</p>
+                    <div class="text-2xl font-bold text-orange-600">Rp 22.000</div>
+                </div>
+                <div class="border rounded-2xl p-6 text-center shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                    <div class="text-4xl mb-4">🍵</div>
+                    <h3 class="text-xl font-bold mb-2">Matcha Creamy</h3>
+                    <p class="text-gray-500 text-sm mb-4">Untuk Anda pecinta teh, matcha premium dengan susu segar.</p>
+                    <div class="text-2xl font-bold text-orange-600">Rp 27.000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 px-4 bg-amber-50 fade-in-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">Galeri <span class="text-orange-600">Momen Senja</span></h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Setiap sudut di Kopi Senja diciptakan untuk kenyamanan dan kenangan.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="group relative overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1511920183353-3c7c9c2134d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1559496417-50f4a7c1853d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="group relative overflow-hidden rounded-xl">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=500" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 px-4 bg-gradient-to-br from-white to-orange-50 fade-in-section">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Pelanggan Setia</span> Kami?</h2>
+                 <p class="text-gray-600 max-w-2xl mx-auto">Kepuasan Anda adalah kebahagiaan kami.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="flex gap-1 mb-4 text-yellow-400"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                    <p class="italic text-gray-700 mb-6">“Senja Latte-nya juara! Tempatnya juga cozy banget buat nugas atau sekadar ngobrol santai sama teman. Pasti balik lagi!”</p>
+                    <div class="flex items-center gap-4">
+                        <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100" alt="Pelanggan">
+                        <div>
+                            <p class="font-bold text-gray-900">Anisa Putri</p>
+                            <p class="text-sm text-orange-700 font-medium">Mahasiswi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="flex gap-1 mb-4 text-yellow-400"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                    <p class="italic text-gray-700 mb-6">“Akhirnya nemu tempat ngopi yang serius sama kualitas kopinya. Biji kopinya fresh, baristanya ramah dan informatif.”</p>
+                    <div class="flex items-center gap-4">
+                        <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100" alt="Pelanggan">
+                        <div>
+                            <p class="font-bold text-gray-900">Budi Santoso</p>
+                            <p class="text-sm text-orange-700 font-medium">Pekerja Lepas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="flex gap-1 mb-4 text-yellow-400"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                    <p class="italic text-gray-700 mb-6">“Suka banget sama suasananya, playlist lagunya juga pas. Croissant-nya the best, renyah dan wangi. Cocok buat 'me time'.”</p>
+                    <div class="flex items-center gap-4">
+                        <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100" alt="Pelanggan">
+                        <div>
+                            <p class="font-bold text-gray-900">Rina Wijaya</p>
+                            <p class="text-sm text-orange-700 font-medium">Content Creator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white fade-in-section">
+        <div class="max-w-6xl mx-auto py-16 px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">Kunjungi Kami</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">Kami tunggu kedatangan Anda untuk menikmati kopi dan senja bersama kami.</p>
+                <p class="text-white mt-4 font-semibold">Jl. Kenangan Indah No. 45, Pekalongan</p>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-center">
+                <p class="text-gray-400 text-sm">© 2025 Kopi Senja. All rights reserved.</p>
+                <div class="flex items-center gap-4 text-sm text-gray-400 mt-4 sm:mt-0">
+                    <span>Dibuat dengan ❤️ di Indonesia</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Script sederhana untuk animasi fade-in saat scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in-section');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
